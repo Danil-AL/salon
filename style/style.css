@@ -1,0 +1,350 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+}
+
+.active {
+    color: rgb(199, 25, 199);
+    display: inline-block;
+}
+
+.container {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+}
+
+.footer .container span {
+    font-weight: 700;
+    align-items: center;
+}
+
+.footer .container h2 {
+    color: rgb(219, 39 ,119, 1)
+}
+
+.bella {
+    color: rgb(31, 41, 55, 1)
+}
+
+.footer .container .menu a {
+    margin-left: 50px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.footer .container .menu a:hover {
+   background-color: rgba(219, 39 ,119, 1);
+   padding: 5px 5px;
+}
+
+.last-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-footer p, button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.last-footer button {
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color:rgb(219, 39, 119, 1);
+    border: none;
+    text-align: center;
+    border-radius:4px;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    vertical-align: inherit;
+    font-size: 100%;
+    
+    transition: all 500ms ease;
+}
+
+.last-footer button:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.584);
+    background-color: rgb(180, 34, 100);
+}
+
+h1 {
+    width: 450px;
+    margin-left: 80px;
+    margin-top: 150px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 55px;
+    color: rgba(178, 5, 230, 0.845);
+}
+
+
+.first-main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    width: 25%;
+    color: rgb(4, 4, 4);
+    font-size: 24px;
+    text-align: left;
+    color: rgb(217, 69, 140);
+}
+
+.btn-main {
+    
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color:rgb(219, 39, 119, 1);
+    border: none;
+    border-radius:4px;
+    cursor: pointer;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-size: 100%;
+    margin-left: 0;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+
+    transition: all 500ms ease;
+}
+
+.btn-main:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.584);
+    background-color: rgb(180, 34, 100);
+}
+
+/* О НАС */
+.our {
+    display: flex;
+    justify-content: space-between;
+    background-color: wheat;
+    height: 1000px;
+}
+
+.text-our {
+    width: 50%;
+}
+
+.our .container .text-our {
+    text-align: left;
+}
+
+.our .container .text-our h2 {
+    margin: auto 10px 10px;
+    font-size: 45px;
+}
+
+.our .container .text-our .word1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.another {
+    display: grid;
+    column-gap: 20%;
+    text-align: left;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.photo {
+    display: grid;
+    height: inherit;
+    width: 50%;
+    gap: 1rem;
+    object-fit: cover;
+    grid-template: "A B" "C C" ;
+}
+
+.our .container .photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.A {
+    grid-area: A;
+}
+
+.B {
+    grid-area: B;
+}
+
+.C {
+    grid-area: C;
+}
+
+/* HEADER */
+
+.header {
+    background-color: rgba(31, 41, 55, 1);
+    border: 2px solid;
+    padding: 100px auto;
+    width: 100%;
+}
+.header .last-header h3,h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header .last-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    line-height: 35px;
+}
+
+.header ul, li, a {
+    list-style: none;
+    color: #ffffff8e;
+    font-size: 12px;
+}
+
+.last-header {
+    color: #ffffff8e;
+}
+
+.header li, a {
+    transition: all 500ms ease;
+}
+
+.last-header a:hover {
+    color: #fff;
+}
+
+.last-menu1 {
+    width: 30%;
+}
+
+.last-menu2 {
+    width: 25%;
+    padding-left: 150px;
+}
+
+.last-menu3 {
+    width: 25%;
+}
+
+.last-menu4 {
+    width: 25%;
+}
+
+.header-word {
+    margin-right: 50px;
+}
+
+
+.header-word:last-of-type {
+    margin-right: 0;
+}
+
+.last-header span {
+    color: rgb(217, 69, 140);
+}
+
+/* КНОПКА */
+.booking-container {
+  
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+
+}
+
+.booking-button {
+    background-color: rgb(180, 34, 100);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    width: 20%;
+    box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+}
+
+.booking-button:hover {
+    background-color: rgb(128, 26, 72);
+}
+
+.time-menu {
+    margin-top: 20px;
+}
+
+.time-menu h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.time-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет кнопкам переноситься на новую строку */
+    gap: 10px; /* Отступы между кнопками */
+    justify-content: center;
+}
+
+.time-slot-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex-grow: 1; /* Кнопки будут растягиваться */
+    max-width: 120px; /* Максимальная ширина для кнопок времени */
+}
+
+.time-slot-button:hover {
+    background-color: #5a6268;
+}
+
+.confirmation {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #28a745; /* Зеленый цвет для успешного сообщения */
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Стили для кнопки "Записаться еще раз" */
+#resetButton {
+    margin-top: 20px;
+    background-color: #28a745; /* Зеленый цвет */
+}
+
+#resetButton:hover {
+    background-color: #218838;
+}
+
+
+
+
+

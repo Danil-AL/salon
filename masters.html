@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БеллаКрасота</title>
+    <link rel="stylesheet" href="style/stylemodel.css">
+    <link rel="stylesheet" href="style/styleour.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+   
+        <!-- FOOTER -->
+        <div class="footer">
+
+            <div class="container">
+
+                    <h2 class="name">
+                       Белла<span class="bella">Красота</span>
+                    </h2>
+
+                    <div class="menu">
+                        <nav>
+                            <a href="index.html">Главная страница</a>
+                            <a class="active" href="our.html">Услуги</a>
+                            <a href="#">Мастера</a>
+                            <a href="#">Цены</a>
+                            <a href="contacts.html">Контакты</a>
+                        </nav>
+                    </div>
+
+                    <div class="last-footer">
+
+                        <p>+7 (495) 123-45-67</p>
+
+                        <button class="open-modal-btn" data-master-name="Дмитрий Козлов">Записаться онлайн</button>
+                    
+                    </div>
+            </div>       
+
+        </div>
+
+     
+        <!-- MASTERS -->
+        <div class="slider-container">
+        <div class="slides-wrapper">
+            <!-- СЛАЙД 1 -->
+            <div class="slide-item">
+                <div class="photo-slider">
+                    <img src="img/slaider1.jpg" alt="Фото Дмитрия Козлова">
+                </div>
+                <div class="text-slider">
+                    <h3>Дмитрий Козлов</h3>
+                    <p class="mas">Массажист</p>
+                    <p class="mas2">Дмитрий — мастер с высшим медицинским образованием
+                    и опытом работы более 8 лет. Владеет различными
+                    техниками массажа: от классических до экзотических
+                    восточных методик. Поможет расслабиться
+                    и восстановить силы.</p>
+                   <button class="open-modal-btn" data-master-name="Дмитрий Козлов">Записаться к мастеру</button>
+                </div>
+            </div>
+
+            <!-- СЛАЙД 2 (пример другого мастера или та же информация для демонстрации) -->
+            <div class="slide-item">
+                <div class="photo-slider">
+                    <img src="img/slaider2.jpg" alt="Фото Елены Смирновой">
+                </div>
+                <div class="text-slider">
+                    <h3>Елена Смирнова</h3>
+                    <p class="mas">Косметолог</p>
+                    <p class="mas2">Елена — опытный косметолог с 10-летним стажем.
+                    Специализируется на уходе за кожей лица, аппаратных
+                    методиках и инъекционных процедурах. Поможет
+                    подчеркнуть вашу естественную красоту и молодость.</p>
+                   <button class="open-modal-btn" data-master-name="Дмитрий Козлов">Елена смирнова</button>
+                </div>
+            </div>
+
+            <!-- СЛАЙД 3 -->
+            <div class="slide-item">
+                <div class="photo-slider">
+                    <img src="img/slider3.jpg" alt="Фото Ивана Петрова">
+                </div>
+                <div class="text-slider">
+                    <h3>Мария Петрова</h3>
+                    <p class="mas">Мастер маникюра и педикюра</p>
+                    <p class="mas2">Мария — настоящий в мире нейл-артист. 
+                        Владеет всеми современными техниками маникюра и педикюра. 
+                        Создает уникальные дизайны, которые не оставят равнодушными 
+                        даже самых требовательных клиентов.</p>
+                   <button class="open-modal-btn" data-master-name="Дмитрий Козлов">Мария Петрова</button>
+                </div>
+            </div>
+
+            <!-- СЛАЙД 4 -->
+            <div class="slide-item">
+                <div class="photo-slider">
+                    <img src="img/slider4.jpg" alt="Фото Ольги Кузнецовой">
+                </div>
+                <div class="text-slider">
+                    <h3>Анна Сидорова</h3>
+                    <p class="mas">Косметолог-эстетист</p>
+                    <p class="mas2">Анна — дипломированный косметолог с медицинским 
+                        образованием. Специализируется на аппаратной косметологии и 
+                        инъекционных методах. Индивидуальный подход к каждому клиенту — 
+                        ее принцип и главный принцип работы.</p>
+                    <button class="open-modal-btn" data-master-name="Анна Сидорова">Записаться к мастеру</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- РАЮОЧИЕ КНОПКИ -->
+        <!-- ==================== Модальное Окно (Окно Записи) ==================== -->
+    <!-- Вставьте этот блок HTML после вашего существующего слайдера или в любое другое место body -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close-button" id="closeModalBtn">&times;</button>
+            <h2>Запись на услугу</h2>
+
+            <form class="booking-form" id="bookingForm">
+                <label for="clientName">Ваше имя:</label>
+                <input type="text" id="clientName" name="clientName" required>
+
+                <label for="clientPhone">Телефон:</label>
+                <input type="tel" id="clientPhone" name="clientPhone" placeholder="+7 (XXX) XXX-XX-XX" required>
+
+                <label for="clientEmail">Email:</label>
+                <input type="email" id="clientEmail" name="clientEmail">
+
+                <label for="serviceSelect">Необходимая услуга:</label>
+                <select id="serviceSelect" name="serviceSelect" required>
+                    <option value="">Выберите услугу</option>
+                    <option value="стрижка-укладка">Стрижка и укладка</option>
+                    <option value="маникюр-педикюр">Маникюр и педикюр</option>
+                    <option value="окрашивание-волос">Окрашивание волос</option>
+                    <option value="уход-за-лицом">Уход за лицом</option>
+                    <option value="массаж">Массаж</option>
+                </select>
+
+                <label for="masterSelect">Выберите мастера:</label>
+                <select id="masterSelect" name="masterSelect" required>
+                    <option value="">Выберите мастера</option>
+                    <option value="Дмитрий Козлов">Дмитрий Козлов</option>
+                    <option value="Елена Смирнова">Елена Смирнова</option>
+                    <option value="Мария Петрова">Мария Петрова</option>
+                    <option value="Анна Сидорова">Анна Сидорова</option>
+                    <!-- Добавьте других мастеров по необходимости, чтобы они соответствовали вашим слайдам -->
+                </select>
+
+                <label for="bookingDate">Дата:</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+
+                <label for="bookingTime">Время:</label>
+                <input type="time" id="bookingTime" name="bookingTime" required>
+
+                <button type="submit">Записаться</button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <p>✅ Отлично! Ваша запись успешно отправлена. Мы свяжемся с вами в ближайшее время для подтверждения.</p>
+            </div>
+        </div>
+    </div>
+    
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="container">
+
+                <div class="last-header">
+
+                    <div class="last-menu1 header-word">
+
+                        <h3><span>Белла</span>Красота</h3>
+                        <P>Ваш салон красоты в центре Москвы. 
+                        Мы делаем мир красивее с 2010 года.</P>
+                        <br>
+                
+
+                
+                    
+                    </div>
+
+                    <div class="last-menu2 header-word">
+
+                        <nav>
+                            <ul>
+                                <h4>Навигация</h4>
+                                <li><a href="#"> Услуги</a></li>
+                                <li><a href="#">Мастера</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <div class="last-menu3 header-word">
+
+                                <h4>Услуги</h4>
+                              <ul> 
+                                <li>Парикмахерские услуги</li> 
+                                <li>Маникюр и педикюр</li>
+                                <li>Косметология</li>
+                                <li>Массаж</li>
+                            </ul>
+                    </div>
+
+                    <div class="last-menu4 header-word">
+
+                        <h4>Контакты</h4>
+                        <ul> 
+                            <li>ул. Пушкинская, д. 25, Москва</li>
+                            <li>+7 (495) 123-45-67</li>
+                            <li>info@bellakrasota.ru</li>
+                        </ul>
+                       
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const bookingModal = document.getElementById('bookingModal');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            // Важно: Эти кнопки должны быть в вашем HTML-коде (например, в слайдере)
+            // Добавьте класс "open-modal-btn" и атрибут "data-master-name" к своим кнопкам записи
+            const openModalBtns = document.querySelectorAll('.open-modal-btn');
+            const bookingForm = document.getElementById('bookingForm');
+            const successMessage = document.getElementById('successMessage');
+            const masterSelect = document.getElementById('masterSelect'); // Выпадающий список мастеров
+
+            // Функция открытия модального окна
+            function openModal(masterName = null) {
+                bookingModal.style.display = 'flex'; // Показать модальное окно
+                bookingForm.style.display = 'block'; // Показать форму
+                successMessage.style.display = 'none'; // Скрыть сообщение об успехе
+
+                // Если имя мастера передано, попытаемся выбрать его в списке
+                if (masterName) {
+                    let foundMaster = false;
+                    for (let i = 0; i < masterSelect.options.length; i++) {
+                        if (masterSelect.options[i].value === masterName) {
+                            masterSelect.value = masterName;
+                            foundMaster = true;
+                            break;
+                        }
+                    }
+                    if (!foundMaster) {
+                        masterSelect.value = ""; // Если не нашли, сбрасываем выбор
+                    }
+                } else {
+                    masterSelect.value = ""; // Если мастер не был передан, сбрасываем выбор
+                }
+
+                // Устанавливаем минимальную дату (сегодня) для input[type="date"]
+                const today = new Date();
+                const dd = String(today.getDate()).padStart(2, '0');
+                const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+                const yyyy = today.getFullYear();
+                document.getElementById('bookingDate').min = `${yyyy}-${mm}-${dd}`;
+            }
+
+            // Функция закрытия модального окна
+            function closeModal() {
+                bookingModal.style.display = 'none'; // Скрыть модальное окно
+                bookingForm.reset(); // Очистить форму
+            }
+
+            // Обработчики событий для кнопок, которые открывают модальное окно
+            openModalBtns.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const masterName = event.target.dataset.masterName; // Получаем имя мастера из data-атрибута
+                    openModal(masterName);
+                });
+            });
+
+            // Обработчик события для кнопки закрытия модального окна
+            closeModalBtn.addEventListener('click', closeModal);
+
+            // Закрытие модального окна по клику на фон (вне содержимого)
+            bookingModal.addEventListener('click', (event) => {
+                if (event.target === bookingModal) {
+                    closeModal();
+                }
+            });
+
+            // Обработчик отправки формы
+            bookingForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Предотвращаем стандартную отправку формы и перезагрузку страницы
+
+                // Собираем данные формы
+                const formData = {
+                    name: document.getElementById('clientName').value,
+                    phone: document.getElementById('clientPhone').value,
+                    email: document.getElementById('clientEmail').value,
+                    service: document.getElementById('serviceSelect').value,
+                    master: document.getElementById('masterSelect').value,
+                    date: document.getElementById('bookingDate').value,
+                    time: document.getElementById('bookingTime').value
+                };
+
+                console.log('Данные для записи:', formData);
+
+                // В реальном проекте здесь отправили formData на ваш сервер
+                // Например, с помощью Fetch API:
+                /*
+                fetch('/api/book-appointment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Успех:', data);
+                    bookingForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    setTimeout(closeModal, 3000); // Закрыть модальное окно через 3 секунды
+                })
+                .catch((error) => {
+                    console.error('Ошибка:', error);
+                    alert('Произошла ошибка при записи. Попробуйте еще раз.');
+                });
+                */
+
+                // Для демонстрации: скрываем форму и показываем сообщение об успехе
+                bookingForm.style.display = 'none';
+                successMessage.style.display = 'block';
+
+                // Опционально: автоматически закрыть модальное окно через несколько секунд
+                setTimeout(closeModal, 4000); // Закрыть через 4 секунды
+            });
+        });
+    </script>
+</body>
+</html>

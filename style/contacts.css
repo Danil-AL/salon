@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: rgb(55, 65, 81, 1);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 750px;
+}
+
+.contacts {
+    background-color: rgba(128, 128, 128, 0.468);
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    font-size: 20px;
+}
+
+.active {
+    color: rgb(199, 25, 199);
+    display: inline-block;
+}
+
+.container {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+}
+
+.footer .container span {
+    font-weight: 700;
+    align-items: center;
+}
+
+.footer .container h2 {
+    color: rgb(219, 39 ,119, 1)
+}
+
+.bella {
+    color: rgb(31, 41, 55, 1)
+}
+
+.footer .container .menu a {
+    margin-left: 50px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.footer .container .menu a:hover {
+   background-color: rgba(219, 39 ,119, 1);
+   padding: 5px 5px;
+}
+
+.last-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-footer p, button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.last-footer button {
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color:rgb(219, 39, 119, 1);
+    border: none;
+    text-align: center;
+    border-radius:4px;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    vertical-align: inherit;
+    font-size: 100%;
+    
+    transition: all 500ms ease;
+}
+
+.last-footer button:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.584);
+    background-color: rgb(180, 34, 100);
+}
+
+h1 {
+    width: 450px;
+    margin-left: 80px;
+    margin-top: 150px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 55px;
+    color: rgba(178, 5, 230, 0.845);
+}
+
+
+.first-main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    width: 25%;
+    color: rgb(4, 4, 4);
+    font-size: 24px;
+    text-align: left;
+    color: rgb(217, 69, 140);
+}
+
+
+
+
+/* HEADER */
+
+.header {
+    background-color: rgba(31, 41, 55, 1);
+    border: 2px solid;
+    padding: 100px auto;
+    width: 100%;
+}
+.header .last-header h3,h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header .last-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    line-height: 35px;
+}
+
+.header ul, li, a {
+    list-style: none;
+    color: #ffffff8e;
+    font-size: 12px;
+}
+
+.last-header {
+    color: #ffffff8e;
+}
+
+.header li, a {
+    transition: all 500ms ease;
+}
+
+.last-header a:hover {
+    color: #fff;
+}
+
+.last-menu1 {
+    width: 30%;
+}
+
+.last-menu2 {
+    width: 25%;
+    padding-left: 150px;
+}
+
+.last-menu3 {
+    width: 25%;
+}
+
+.last-menu4 {
+    width: 25%;
+}
+
+.header-word {
+    margin-right: 50px;
+}
+
+
+.header-word:last-of-type {
+    margin-right: 0;
+}
+
+.last-header span {
+    color: rgb(217, 69, 140);
+}
+
+
+/* Контейнер формы */
+        .contact-form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 90%; /* Ширина на мобильных */
+            max-width: 500px; /* Максимальная ширина формы */
+            box-sizing: border-box; /* Учитываем padding в общей ширине */
+             box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.156);
+        }
+
+        /* Заголовок формы */
+        .contact-form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #3498db; /* Синий цвет заголовка */
+            font-size: 2em;
+        }
+
+        /* Стили для меток (текст над полем ввода) */
+        .contact-form label {
+            display: block; /* Каждая метка на новой строке */
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Стили для полей ввода (имя, телефон, email) и текстового поля (сообщение) */
+        .contact-form input[type="text"],
+        .contact-form input[type="tel"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(100% - 20px); /* 100% ширины минус padding по 10px с каждой стороны */
+            padding: 12px 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box; /* Важно, чтобы padding не увеличивал общую ширину */
+        }
+
+        /* Специфические стили для текстового поля (сообщения) */
+        .contact-form textarea {
+            resize: vertical; /* Разрешаем изменение размера только по вертикали */
+            min-height: 100px; /* Минимальная высота */
+            max-height: 300px; /* Максимальная высота */
+        }
+
+        /* Стили для кнопки отправки */
+        .contact-form button[type="submit"] {
+            width: 100%;
+            background-color: #2ecc71; /* Зеленая кнопка */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+            margin-top: 10px;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #27ae60; /* Темно-зеленая при наведении */
+        }
+
+        /* Стили для сообщения об успешной отправке (изначально скрыто) */
+        .success-message {
+            display: none; /* Скрыто по умолчанию. JavaScript покажет его */
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color: #d4edda; /* Светло-зеленый фон */
+            color: #155724; /* Темно-зеленый текст */
+            font-size: 1.1em;
+            font-weight: bold;
+            border: 1px solid #c3e6cb;
+            animation: fadeIn 0.5s forwards; /* Анимация появления */
+        }
+
+        /* Анимация плавного появления */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Медиа-запросы для адаптивности (если форма становится слишком узкой на маленьких экранах) */
+        @media (max-width: 600px) {
+            .contact-form-container {
+                padding: 20px;
+                margin: 20px; /* Отступы от краев экрана */
+            }
+            .contact-form-container h2 {
+                font-size: 1.8em;
+            }
+        }
+
+
+        .contats-with {
+            text-align: center;
+            align-items: center;
+            padding-top: 100px;
+            font-size: 22px;
+            margin-bottom: 60px;
+        }
+
+        .contats-with p {
+            padding-top: 30px;
+            font-size: 16px;
+        }
+
+        .all-contact {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 100px;
+            padding-bottom: 100px;
+        }
+
+
+        .our-contact {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            color: black;
+            border-radius: 15px;
+            padding: 20px 50px;
+            margin-right: 50px;
+            box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.156);
+        } 
+
+        .our-contact li {
+            color: black;
+            line-height: 50px;
+            font-size: 20x;
+        }
+        
+
+
+
+
+

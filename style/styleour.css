@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: rgb(55, 65, 81, 1);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.active {
+    color: rgb(199, 25, 199);
+    display: inline-block;
+}
+
+.container {
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+}
+
+.footer .container span {
+    font-weight: 700;
+    align-items: center;
+}
+
+.footer .container h2 {
+    color: rgb(219, 39 ,119, 1)
+}
+
+.bella {
+    color: rgb(31, 41, 55, 1)
+}
+
+.footer .container .menu a {
+    margin-left: 50px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.footer .container .menu a:hover {
+   background-color: rgba(219, 39 ,119, 1);
+   padding: 5px 5px;
+}
+
+.last-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-footer p, button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.last-footer button {
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color:rgb(219, 39, 119, 1);
+    border: none;
+    text-align: center;
+    border-radius:4px;
+    cursor: pointer;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    vertical-align: inherit;
+    font-size: 100%;
+    
+    transition: all 500ms ease;
+}
+
+.last-footer button:hover {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 0.584);
+    background-color: rgb(180, 34, 100);
+}
+
+.header {
+    background-color: rgba(31, 41, 55, 1);
+    border: 2px solid;
+    padding: 100px auto;
+    width: 100%;
+}
+.header .last-header h3,h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header .last-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 100%;
+    line-height: 35px;
+}
+
+.header ul, li, a {
+    list-style: none;
+    color: #ffffff8e;
+    font-size: 12px;
+}
+
+.last-header {
+    color: #ffffff8e;
+}
+
+.header li, a {
+    transition: all 500ms ease;
+}
+
+.last-header a:hover {
+    color: #fff;
+}
+
+.last-menu1 {
+    width: 30%;
+}
+
+.last-menu2 {
+    width: 25%;
+    padding-left: 150px;
+}
+
+.last-menu3 {
+    width: 25%;
+}
+
+.last-menu4 {
+    width: 25%;
+}
+
+.header-word {
+    margin-right: 50px;
+}
+
+
+.header-word:last-of-type {
+    margin-right: 0;
+}
+
+.last-header span {
+    color: rgb(217, 69, 140);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MAIN OUR */
+.our-main {
+    padding:auto 100px;
+}
+.our-main .word-main {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.price {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    object-fit: cover;
+    padding: 20px 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.our-price {
+    background-color: #eed7e88e;
+    border-radius: 10px;
+
+    transition: all 500ms ease;
+}
+
+.our-price:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.word-our h3 {
+    padding: 20px 20px;
+}
+
+.word-our p{
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 90%;
+    opacity: 0.8;
+}
+
+.price-our {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    color: rgb(219 39 119);
+}
+
+.price-our button {
+    border-color: rgb(219 39 119);
+    background-color: transparent;
+    color: rgb(219 39 119);
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+
+    transition: all 500ms ease;
+}
+
+.price-our button:hover {
+    background-color: rgb(219 39 119);
+    color: #fff;
+    border: none;
+}
+
+
+/* MASTERS */
+
+.masters {
+    background-color: #ffffffd0;
+}
+
+.master-container {
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.slider {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow: 10px 5px 5px 5px rgb(175, 166, 166);
+    overflow: hidden;
+    width: 400%;
+    animation: slideAnimation 40s infinite ease-in-out;
+}
+
+.slider .photo-slider img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-slider {
+    padding: 20px 40px;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    color: rgb(75 85 99);
+    height: 100%;
+}
+
+.text-slider h3 {
+    font-size: 34px;
+    margin-bottom: 22px;
+    color: #000;
+}
+
+.text-slider .mas {
+    color: rgb(219 39 119);
+    margin-bottom: 22px;
+    font-size: 24px;
+}
+
+.text-slider .mas2 {
+    font-size: 20px;
+    margin-bottom: 350px;
+}
+
+.text-slider button {
+    background-color: rgb(219 39 119);
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-align: left;
+    align-items: left;
+    font-size: 18px;
+    transition: all 500ms ease;
+}
+
+.text-slider button:hover {
+    background-color: rgb(174, 32, 96);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slider-container {
+    width: 100%; /* Ширина контейнера слайдера */
+    max-width: 1550px; /* Максимальная ширина */
+    height: 600px; /* Фиксированная высота слайдера */
+    overflow: hidden; /* Скрывает контент, выходящий за пределы */
+    position: relative;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+        }
+
+ /* Обёртка для всех элементов слайдера, которая будет двигаться */
+.slides-wrapper {
+     display: flex; /* Размещает слайды в одну строку */
+     width: 400%; /* 4 слайда * 100% каждый = 400% от ширины контейнера */
+     height: 100%;
+    /* Анимация: имя_анимации | длительность | временная_функция | количество_итераций | режим_заполнения */
+    /* 40s = 4 слайда * (9с показа + 1с перехода) */
+     animation: slideAnimation 20s infinite ease-in-out;
+    }
+
+    /* Пауза анимации при наведении курсора */
+.slider-container:hover .slides-wrapper {
+    animation-play-state: paused;
+        }
+
+     /* Стили для каждого отдельного элемента слайдера (блока мастера) */
+.slide-item {
+    width: 25%; /* Каждый slide-item занимает 1/4 ширины slides-wrapper, что равно 100% ширины slider-container */
+    flex-shrink: 0; /* Запрещает слайдам сжиматься */
+    display: flex; /* Используем flexbox для размещения фото и текста рядом */
+    height: 100%;
+    align-items: center; /* Выравнивание элементов по центру по вертикали */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    }
+
+    /* Стили для блока с фотографией */
+.photo-slider {
+    flex: 0 0 40%; /* Занимает 40% ширины, не сжимается и не растёт */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden; /* Скрыть части фото, если они выходят за рамки */
+    }
+
+.photo-slider img {
+    max-width: 100%; /* Фотография не должна выходить за пределы своего контейнера */
+    height: auto; /* Сохраняет пропорции */
+    display: block; /* Убирает лишние отступы снизу у img */
+    border-radius: 8px; /* Скруглённые углы для фото */
+    object-fit: cover; /* Обрезает фото, чтобы оно заполнило контейнер */
+    border-radius: 15px;
+    }
+
+    /* Стили для блока с текстом */
+.text-slider {
+    flex: 1; /* Занимает оставшееся пространство */
+    padding-left: 30px; /* Отступ от фото */
+    display: flex;
+    flex-direction: column; /* Элементы внутри текста располагаются вертикально */
+    justify-content: center; /* Выравнивание текста по центру по вертикали */
+    max-height: 100%; /* Ограничиваем высоту текстового блока */
+    overflow-y: auto; /* Добавляем прокрутку, если текст не помещается */
+    }
+
+.text-slider h3 {
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #3498db; /* Цвет заголовка */
+    }
+
+        .text-slider .mas {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .text-slider .mas2 {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .text-slider button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.05em;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            align-self: flex-start; /* Прижимаем кнопку к левому краю */
+        }
+
+        .text-slider button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Определение ключевых кадров анимации */
+        @keyframes slideAnimation {
+            0% { transform: translateX(0%); } /* Начало, показываем Слайд 1 */
+            22.5% { transform: translateX(0%); } /* Слайд 1 стоит на месте */
+            25% { transform: translateX(-25%); } /* <-- ИСПРАВЛЕНО: Переход к Слайду 2 */
+
+            47.5% { transform: translateX(-25%); } /* Слайд 2 стоит на месте */
+            50% { transform: translateX(-50%); } /* <-- ИСПРАВЛЕНО: Переход к Слайду 3 */
+
+            72.5% { transform: translateX(-50%); } /* Слайд 3 стоит на месте */
+            75% { transform: translateX(-75%); } /* <-- ИСПРАВЛЕНО: Переход к Слайду 4 */
+
+            97.5% { transform: translateX(-75%); } /* Слайд 4 стоит на месте */
+            100% { transform: translateX(0%); } /* Мгновенный возврат к Слайду 1 для бесконечного цикла */
+        }
+
+        /* Медиа-запросы для адаптивности */
+        @media (max-width: 768px) {
+            .slider-container {
+                height: auto; /* Высота становится адаптивной */
+                min-height: 550px; /* Минимальная высота для небольших экранов */
+                margin: 20px;
+            }
+
+            .slide-item {
+                flex-direction: column; /* Элементы располагаются вертикально */
+                padding: 15px;
+            }
+
+            .photo-slider {
+                flex: none; /* Убираем жесткие пропорции */
+                width: 70%; /* Фото занимает 70% ширины родителя */
+                height: 250px; /* Фиксированная высота для фото на мобильных */
+                margin-bottom: 20px; /* Отступ между фото и текстом */
+            }
+
+            .photo-slider img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .text-slider {
+                padding-left: 0; /* Убираем левый отступ */
+                text-align: center; /* Центрируем текст на мобильных */
+                align-items: center; /* Центрируем элементы по горизонтали */
+            }
+
+            .text-slider button {
+                align-self: center; /* Центрируем кнопку */
+            }
+
+            .text-slider h3 {
+                font-size: 1.8em;
+            }
+
+            .text-slider .mas {
+                font-size: 1em;
+            }
+
+            .text-slider .mas2 {
+                font-size: 0.9em;
+            }
+
+            .modal-overlay {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
+            backdrop-filter: blur(3px); /* Размытие фона */
+            z-index: 1000; /* Поверх всего */
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s forwards; /* Анимация появления */
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+            animation: slideIn 0.3s forwards; /* Анимация появления контента */
+            max-height: 90vh; /* Ограничиваем высоту для скролла на маленьких экранах */
+            overflow-y: auto; /* Добавляем скролл, если контент не помещается */
+        }
+
+        .modal-close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.8em;
+            cursor: pointer;
+            color: #aaa;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close-button:hover {
+            color: #333;
+        }
+
+        .modal-content h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: #3498db;
+            text-align: center;
+        }
+
+        .booking-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="tel"],
+        .booking-form input[type="email"],
+        .booking-form input[type="date"],
+        .booking-form input[type="time"],
+        .booking-form select {
+            width: calc(100% - 20px); /* Ширина с учетом padding */
+            padding: 12px 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box; /* Важно для корректной ширины */
+        }
+
+        .booking-form button[type="submit"] {
+            width: 100%;
+            background-color: #2ecc71; /* Зеленая кнопка */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .booking-form button[type="submit"]:hover {
+            background-color: #27ae60;
+        }
+
+        .success-message {
+            display: none; /* Скрыто по умолчанию */
+            text-align: center;
+            padding: 30px;
+            color: #27ae60;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        /* Анимации для модального окна */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    }
+
+
+        
+
+
